@@ -10,6 +10,11 @@
 """
 __author__ = 'expbuf'
 
+"""
+数组
+分治算法
+二分查找
+"""
 from typing import List
 
 
