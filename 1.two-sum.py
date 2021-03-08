@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
    @FileName :   1.two-sum.py
@@ -7,6 +8,16 @@
    @Description :
 """
 __author__ = 'expbuf'
+=======
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :    1.two-sum.py
+@Contact :    expbuf@hotmail.com
+@Datetime:    2021/3/1 16:46
+@Author :     expbuf
+'''
+>>>>>>> 2a39426c4fc9930da50b1c976a3cac51acd9faa8
 
 from typing import List
 
