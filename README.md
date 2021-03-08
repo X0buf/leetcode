@@ -1,2 +1,2 @@
 ## leetcode
-### python
+### Top100 is first completed using Python
