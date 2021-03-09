@@ -22,6 +22,10 @@ __author__ = 'expbuf'
 示例 3：
 输入：digits = "2"
 输出：["a","b","c"]
+
+提示：
+    0 <= digits.length <= 4
+    digits[i] 是范围 ['2', '9'] 的一个数字。
 """
 
 from typing import List
@@ -60,13 +64,29 @@ class Solution:
                     combination.append(letter)
                     print(combination)
                     backtrack(index + 1)
+                    print(combination)
                     combination.pop()
+                    print(combination)
 
         combination = list()
         combinations = list()
         backtrack(0)
 
         return combinations
+
+
+# 队列
+class Solution1:
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits: return []
+        phone = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
+        queue = ['']  # 初始化队列
+        for digit in digits:
+            for _ in range(len(queue)):
+                tmp = queue.pop(0)
+                for letter in phone[ord(digit) - 50]:  # 这里我们不使用 int() 转换字符串，使用ASCII码
+                    queue.append(tmp + letter)
+        return queue
 
 
 if __name__ == '__main__':
