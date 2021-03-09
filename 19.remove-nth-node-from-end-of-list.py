@@ -82,8 +82,23 @@ class Solution1:
         return dummy.next
 
 
+# 双指针
+class Solution2:
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+        dummy = ListNode(0, head)
+        first = head
+        second = dummy
+        for i in range(n):
+            first = first.next
+        while first:
+            first = first.next
+            second = second.next
+        second.next = second.next.next
+        return dummy.next
+
+
 if __name__ == '__main__':
-    s = Solution1()
+    s = Solution()
     head = [1, 2, 3, 4, 5]
     head = ListNode(head)
     # print(head)
