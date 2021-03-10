@@ -1,6 +1,7 @@
 ## leetcode
 ### Top100 is first completed using Python
 #### 资料
+
     - 书
         - 啊哈!算法
         - 剑指offer
@@ -13,6 +14,7 @@
         - 算法之美
         - 计算机程序设计艺术
 #### 算法
+
     - 五大常用算法
         - 分治算法（divide and conquer）
         - 动态规划算法
