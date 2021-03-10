@@ -2,8 +2,8 @@
 ### Top100 is first completed using Python
 #### 资料
 
-    * 书
-        * 啊哈!算法
+    1. 书
+        - 啊哈!算法
         - 剑指offer
         - 程序=算法+数据结构
         - 算法
