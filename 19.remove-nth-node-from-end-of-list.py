@@ -100,7 +100,8 @@ class Solution2:
 if __name__ == '__main__':
     s = Solution()
     head = [1, 2, 3, 4, 5]
-    head = ListNode(head)
+    # head = ListNode(head)
+    ListNode = ListNode()
     # print(head)
     # LN(head)
     n = 3
