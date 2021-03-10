@@ -3,6 +3,7 @@
 #### 资料
 1. 参考书籍
     - 啊哈!算法
+    - 我的第一本算法书
     - 剑指offer
     - 程序=算法+数据结构
     - 算法
@@ -12,13 +13,32 @@
     - 数据结构与算法分析
     - 算法之美
     - 计算机程序设计艺术
-#### 算法
-1. 五大常用算法
-    - 分治算法（divide and conquer）
-    - 动态规划算法
-    - 贪心算法
-    - 回溯法
-    - 分治界限法
+#### 算法与数据结构
+1. 算法与数据结构
+    1.1 算法
+        - 分治 Divide Conquer
+        - 动态规划
+        - 贪心
+        - 回溯 Backtracking
+        - 分治界限
+        - 二分搜索 Binary Search  
+        - 宽度优先搜索 Breadth First Search 
+        - 深度优先搜索 Depth First Search
+        - 双指针 Two Pointers 
+        - 动态规划 Dynamic Programming 
+        - 扫描线 Scan-line algorithm
+        - 快排 Quick Sort
+    1.2 数据结构部分
+        - 栈 Stack
+        - 队列 Queue
+        - 链表 Linked List 
+        - 数组 Array 
+        - 哈希表 Hash Table
+        - 二叉树 Binary Tree  
+        - 堆 Heap
+        - 并查集 Union Find
+        - 字典树 Trie
+
 2. 常考算法+经典
     - 双指针算法
         - 最长无重复的子串
@@ -84,8 +104,5 @@
         - 乘积最大子序列
         - 解码方法关注问题
         - 编辑距离
-
-
-
 
 #### 流程
