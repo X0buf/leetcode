@@ -26,6 +26,7 @@ __author__ = 'expbuf'
 """
 
 from typing import List
+import pdb
 
 
 class Solution:
@@ -41,6 +42,7 @@ class Solution:
             :param right: 右括号还可以使用的个数
             :return:
             """
+            # pdb.set_trace()
             if left == 0 and right == 0:
                 res.append(cur_str)
                 return
@@ -56,5 +58,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution
-    n = 3
+    s = Solution()
+    n = 2
+    r = s.generateParenthesis(n)
+    print(r)
