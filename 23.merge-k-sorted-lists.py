@@ -46,13 +46,42 @@ __author__ = 'expbuf'
 """
 
 from typing import List
+import pdb
 
 
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+class ListNode(object):
+    def __init__(self, val=0, nxt=None):
+        self.val = val
+        self.next = nxt
+
+
+class LinkList:
+    def __init__(self):
+        self.head = None
+
+    def initList(self, data):
+        # pdb.set_trace()
+
+        # 创建头结点
+        self.head = ListNode(data[0])
+        r = self.head
+        p = self.head
+        # 逐个为 data 内的数据创建结点, 建立链表
+        for i in data[1:]:
+            node = ListNode(i)
+            p.next = node
+            p = p.next
+        return r
+
+    def printlist(self, head):
+        if not head or not head.next:
+            return []
+        result = []
+        while head:
+            result.insert(0, head.val)
+            head = head.next
+        return result
 
 
 # 暴力
@@ -133,10 +162,37 @@ class Solution2:
         return self.merge(self.mergeKLists(lists[:mid]), self.mergeKLists(lists[mid:length]))
 
 
+def build_link(nums):
+    '''创建链表'''
+    res = cur = ListNode(None)
+    for i in nums:
+        cur.next = ListNode(i)
+        cur = cur.next
+    return res.next
+
+
 if __name__ == '__main__':
+    l = LinkList()
     s = Solution()
-    lists = [[1, 4, 5], [1, 3, 4], [2, 6]]
-    ListNode = ListNode()
-    lists = ListNode(lists)
-    r = s.mergeKLists(lists)
-    print(r)
+    nums_li = [[1, 4, 5], [1, 3, 4], [2, 6]]
+    l1 = l.initList(nums_li)
+    print(l.printlist(l1))
+    print(type(l1))
+    # lists = []
+    # head = None
+    # for x in nums_li:
+    #     head = ListNode(x, next=head)
+
+    # for i in nums_li:
+    #     lists.append(build_link(i))
+    # ListNode = ListNode()
+    # lists = ListNode(lists)
+    # print(lists)
+    # r = s.mergeKLists(nums_li)
+    r = s.mergeKLists(l1)
+    print(l.printlist(r))
+
+    # while r:
+    #     print(r.val, end=' ')
+    #     res = r.next
+    # print()
