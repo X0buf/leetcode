@@ -15,7 +15,7 @@
     - 计算机程序设计艺术
 #### 算法与数据结构
 1. 算法与数据结构
-    1.1 算法
+    - 算法
         - 分治 Divide Conquer
         - 动态规划
         - 贪心
@@ -28,7 +28,7 @@
         - 动态规划 Dynamic Programming 
         - 扫描线 Scan-line algorithm
         - 快排 Quick Sort
-    1.2 数据结构部分
+    - 数据结构部分
         - 栈 Stack
         - 队列 Queue
         - 链表 Linked List 
@@ -38,7 +38,6 @@
         - 堆 Heap
         - 并查集 Union Find
         - 字典树 Trie
-
 2. 常考算法 + 经典
     - 双指针算法
         - 最长无重复的子串
