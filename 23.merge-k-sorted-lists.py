@@ -52,8 +52,17 @@ import pdb
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, val=0, nxt=None):
+        # if isinstance(val, int):
         self.val = val
         self.next = nxt
+        # elif isinstance(val, list):
+        #     self.val = val[0]
+        #     self.next = None
+        #     head = self
+        #     for i in val[1:]:
+        #         node = ListNode(i, None)
+        #         head.next = node
+        #         head = head.next
 
 
 class LinkList:
@@ -177,7 +186,15 @@ if __name__ == '__main__':
     nums_li = [[1, 4, 5], [1, 3, 4], [2, 6]]
     l1 = l.initList(nums_li)
     print(l.printlist(l1))
-    print(type(l1))
+    l_nodes = []
+    # for l in nums_li:
+    #     listnode = ListNode(l)
+    #     l_nodes.append(listnode)
+    # merge = s.mergeKLists(l_nodes)
+    # while merge:
+    #     print(merge.val)
+    #     merge = merge.next
+    # print(type(l1))
     # lists = []
     # head = None
     # for x in nums_li:
@@ -189,6 +206,7 @@ if __name__ == '__main__':
     # lists = ListNode(lists)
     # print(lists)
     # r = s.mergeKLists(nums_li)
+
     r = s.mergeKLists(l1)
     print(l.printlist(r))
 
