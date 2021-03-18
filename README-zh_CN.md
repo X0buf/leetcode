@@ -1,5 +1,5 @@
 ## leetcode
-### The LeetCode Top100 questions were completed in Python
+### leetcode TOP100题使用python完成
 #### 资料
 1. 参考书籍
     - 啊哈!算法
