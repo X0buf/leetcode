@@ -1,4 +1,5 @@
 ## leetcode
+English | [简体中文](README-zh_CN.md)
 ### The LeetCode Top100 questions were completed in Python
 #### 资料
 1. 参考书籍
